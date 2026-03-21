@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Ahmed Faarih — web apps, mobile apps, and APIs built with Laravel, Vue.js, React Native, and more.">
+    <meta name="keywords" content="Ahmed Faarih, projects, portfolio, Laravel, Vue.js, React Native, Full Stack Developer, Maldives">
+    <meta name="author" content="Ahmed Faarih">
+    <meta property="og:title" content="Projects - Ahmed Faarih">
+    <meta property="og:description" content="Web apps, mobile apps, and APIs built by Ahmed Faarih.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/seek.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Projects - Ahmed Faarih">
+    <meta name="twitter:description" content="Web apps, mobile apps, and APIs built by Ahmed Faarih.">
+    <meta name="twitter:creator" content="@faarih_ahmed">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Projects - Ahmed Faarih</title>
+</head>
+
+<body>
+<script>if(localStorage.getItem('selected-theme')==='dark')document.body.classList.add('dark-theme');</script>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">Ahmed Faarih</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#qualifications" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Experience
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="projects.html" class="nav__link active-link">
+                            <i class="uil uil-scenery nav__icon"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contact Me
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-apps"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="portfolio section" id="projects" style="padding-top: 6rem;">
+            <h2 class="section__title">Projects</h2>
+            <span class="section__subtitle">Some of the stuff I've built apart from work at Aasandha and Employment Tribunal of Maldives</span>
+
+            <div class="portfolio__tabs container">
+                <div class="portfolio__tab-btn portfolio__tab-btn--active" data-portfolio-tab="web">
+                    <i class="uil uil-globe"></i> Web
+                </div>
+                <div class="portfolio__tab-btn" data-portfolio-tab="mobile">
+                    <i class="uil uil-mobile-android"></i> Mobile
+                </div>
+                <div class="portfolio__tab-btn" data-portfolio-tab="api">
+                    <i class="uil uil-brackets-curly"></i> API
+                </div>
+            </div>
+
+            <div class="portfolio__tab-content portfolio__tab-content--active" id="portfolio-web">
+                <div class="web__container container">
+
+                    <div class="web__card">
+                        <img src="assets/img/seek.png" alt="Seek Maldives - Job ads platform" class="web__img" loading="lazy">
+                        <div class="web__info">
+                            <h3 class="apps__title">Seek Maldives</h3>
+                            <p class="apps__description">An image-centred job listing platform focused on resort jobs in the Maldives. Built with Laravel, Vue.js, and Tailwind. Backend later migrated to Filament with role-based permissions, job postings management, and more.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">Laravel</span>
+                                <span class="portfolio__tag">Vue.js</span>
+                                <span class="portfolio__tag">MySQL</span>
+                                <span class="portfolio__tag">Tailwind</span>
+                                <span class="portfolio__tag">Filament</span>
+                            </div>
+                            <a href="https://seek.mv" target="_blank" class="button button--flex button--small portfolio__button">View <i class="uil uil-arrow-right button__icon"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="web__card">
+                        <img src="assets/img/mcolawyers.png" alt="Munawwar and Co Lawyers website" class="web__img" loading="lazy">
+                        <div class="web__info">
+                            <h3 class="apps__title">Munawwar & Co Lawyers</h3>
+                            <p class="apps__description">Corporate website for a Maldivian law firm. Features the firm's practice areas, attorney profiles, and a contact system for client inquiries.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">Laravel</span>
+                                <span class="portfolio__tag">Vue.js</span>
+                                <span class="portfolio__tag">Tailwind</span>
+                            </div>
+                            <a href="#" class="button button--flex button--small portfolio__button">View <i class="uil uil-arrow-right button__icon"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="web__card">
+                        <img src="assets/img/ocm.png" alt="Ocean Cruiser Maldives website" class="web__img" loading="lazy">
+                        <div class="web__info">
+                            <h3 class="apps__title">Ocean Cruiser Maldives</h3>
+                            <p class="apps__description">Website for OCM — a Maldivian marine company covering engineering services, Suzuki outboard spare parts, and speed boat travel including ferry, excursions, and private charters.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">Laravel</span>
+                                <span class="portfolio__tag">Tailwind</span>
+                                <span class="portfolio__tag">MySQL</span>
+                            </div>
+                            <a href="https://ocm.mv/" target="_blank" class="button button--flex button--small portfolio__button">View <i class="uil uil-arrow-right button__icon"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="web__card">
+                        <img src="assets/img/mn.png" alt="MN Lawyers" class="web__img" loading="lazy">
+                        <div class="web__info">
+                            <h3 class="apps__title">Munavvar Nazahath & Co</h3>
+                            <p class="apps__description">A professional website for a Maldivian law firm. Features practice area pages, attorney profiles, and a contact system for client inquiries.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">Laravel</span>
+                                <span class="portfolio__tag">Vue.js</span>
+                                <span class="portfolio__tag">Tailwind</span>
+                            </div>
+                            <a href="https://mnlawyers.legal" target="_blank" class="button button--flex button--small portfolio__button">View <i class="uil uil-arrow-right button__icon"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="web__card">
+                        <img src="assets/img/prostore.png" alt="Prostore Maldives e-commerce website" class="web__img" loading="lazy">
+                        <div class="web__info">
+                            <h3 class="apps__title">Prostore Maldives</h3>
+                            <p class="apps__description">An e-commerce platform for a Maldivian electronics and accessories retailer. Includes product catalogue, cart, checkout, and Stripe payment integration.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">Laravel</span>
+                                <span class="portfolio__tag">Vue.js</span>
+                                <span class="portfolio__tag">MySQL</span>
+                                <span class="portfolio__tag">Stripe</span>
+                            </div>
+                            <a href="https://prostore.mv" target="_blank" class="button button--flex button--small portfolio__button">View <i class="uil uil-arrow-right button__icon"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="web__card">
+                        <img src="assets/img/dhivehi-ztype.png" alt="Dhivehi ZType typing game" class="web__img" loading="lazy">
+                        <div class="web__info">
+                            <h3 class="apps__title">Dhivehi ZType</h3>
+                            <p class="apps__description">A typing game inspired by ZType, built with JavaScript and HTML5 Canvas. Type Dhivehi words to destroy incoming enemies — a fun way to practice the Dhivehi script.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">JavaScript</span>
+                                <span class="portfolio__tag">HTML5 Canvas</span>
+                            </div>
+                            <a href="#" class="button button--flex button--small portfolio__button">View <i class="uil uil-arrow-right button__icon"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="web__card">
+                        <img src="assets/img/atlantisexpressmv.com.png" alt="Atlantis Express MV website" class="web__img" loading="lazy">
+                        <div class="web__info">
+                            <h3 class="apps__title">Atlantis Express MV</h3>
+                            <p class="apps__description">E-commerce and trading platform for Atlantis Express, specializing in traditional Boduberu instruments and Maldivian cultural items. Full-stack build with product management, orders, and customer accounts.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">Laravel</span>
+                                <span class="portfolio__tag">Vue.js</span>
+                                <span class="portfolio__tag">MySQL</span>
+                                <span class="portfolio__tag">Tailwind</span>
+                            </div>
+                            <a href="https://atlantisexpressmv.com" target="_blank" class="button button--flex button--small portfolio__button">View <i class="uil uil-arrow-right button__icon"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="web__card">
+                        <img src="assets/img/islestudio.png" alt="Isle Studio photography website" class="web__img" loading="lazy">
+                        <div class="web__info">
+                            <h3 class="apps__title">Isle Studio</h3>
+                            <p class="apps__description">Website for a photography studio operating out of resorts across the Maldives. Showcases packages, galleries, and resort partnerships for guests looking to capture their stay.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">WordPress</span>
+                            </div>
+                            <a href="#" class="button button--flex button--small portfolio__button">View <i class="uil uil-arrow-right button__icon"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="portfolio__tab-content" id="portfolio-mobile">
+                <div class="apps__container container">
+
+                    <div class="apps__card">
+                        <div class="apps__screenshots">
+                            <img src="assets/mobile-apps/seekmv/0x0ss (2).png" alt="Seek Maldives app screenshot" class="apps__screen apps__screen--side">
+                            <img src="assets/mobile-apps/seekmv/0x0ss.png" alt="Seek Maldives app - home screen" class="apps__screen apps__screen--center">
+                            <img src="assets/mobile-apps/seekmv/0x0ss (4).png" alt="Seek Maldives app screenshot" class="apps__screen apps__screen--side">
+                        </div>
+                        <div class="apps__info">
+                            <div class="apps__header">
+                                <h3 class="apps__title">Seek Maldives</h3>
+                                <span class="apps__platform"><i class="uil uil-mobile-android"></i> React Native</span>
+                            </div>
+                            <p class="apps__description">The mobile app for Seek Maldives — browse job listings, apply directly, and manage your profile on the go. Backed by the Seek Maldives Laravel API.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">React Native</span>
+                                <span class="portfolio__tag">Laravel API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="apps__card">
+                        <div class="apps__screenshots">
+                            <img src="assets/mobile-apps/atlantisexpressmv/400x800bb(2).png" alt="Atlantis Express app screenshot" class="apps__screen apps__screen--side">
+                            <img src="assets/mobile-apps/atlantisexpressmv/400x800bb.png" alt="Atlantis Express app - home screen" class="apps__screen apps__screen--center">
+                            <img src="assets/mobile-apps/atlantisexpressmv/400x800bb(3).png" alt="Atlantis Express app screenshot" class="apps__screen apps__screen--side">
+                        </div>
+                        <div class="apps__info">
+                            <div class="apps__header">
+                                <h3 class="apps__title">Atlantis Express</h3>
+                                <span class="apps__platform"><i class="uil uil-mobile-android"></i> React Native</span>
+                            </div>
+                            <p class="apps__description">App for Atlantis Express — a Maldivian trading platform specializing in traditional Boduberu instruments and cultural items. Registered in 2020, they've become a trusted name in the Boduberu community for authentic and customized products.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">React Native</span>
+                                <span class="portfolio__tag">Laravel API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="portfolio__tab-content" id="portfolio-api">
+                <div class="api__container container">
+
+                    <div class="api__card">
+                        <div class="api__icon"><i class="uil uil-server-network"></i></div>
+                        <div class="api__data">
+                            <h3 class="api__title">Seek Maldives API</h3>
+                            <p class="api__description">REST API powering the Seek Maldives mobile app. Handles job listings, applications, authentication, and employer management. Built with Laravel and consumed by the React Native client.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">Laravel</span>
+                                <span class="portfolio__tag">REST</span>
+                                <span class="portfolio__tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="api__card">
+                        <div class="api__icon"><i class="uil uil-server-network"></i></div>
+                        <div class="api__data">
+                            <h3 class="api__title">Atlantis Express API</h3>
+                            <p class="api__description">REST API for the Atlantis Express mobile app. Manages product listings, orders, and customer accounts for their Boduberu instruments and cultural items platform.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">Laravel</span>
+                                <span class="portfolio__tag">REST</span>
+                                <span class="portfolio__tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="api__card">
+                        <div class="api__icon"><i class="uil uil-fish"></i></div>
+                        <div class="api__data">
+                            <h3 class="api__title">Fishes of Maldives API</h3>
+                            <p class="api__description">A conversion of the Fishes of Maldives book into a REST API. Species data, images, and descriptions were digitised from the book and served as structured endpoints for use in marine education and research applications.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">Python</span>
+                                <span class="portfolio__tag">FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                    <h2 class="footer__title">Ahmed Faarih</h2>
+                    <span class="footer__subtitle">Full Stack Developer</span>
+                </div>
+
+                <ul class="footer__links" style="align-self: center;">
+                    <li>
+                        <a href="projects.html" class="footer__link">Projects</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials" style="align-self: center;">
+                    <a href="https://twitter.com/faarih_ahmed" class="footer__social" target="_blank">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmedfaarih/" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy" style="margin-top: 10px;">&#169; Ahmed Faarih. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scroll__icon"></i>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

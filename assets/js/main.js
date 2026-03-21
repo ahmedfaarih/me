@@ -29,23 +29,6 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-/*==================== ACCORDION SKILLS ====================*/
-const skillsHeader = document.querySelectorAll('.skills__header');
-
-function toggleSkills() {
-    // Toggle between adding and removing the "skills__open" and "skills__close" class
-    if(this.parentNode.classList.contains('skills__open')){
-        this.parentNode.classList.remove('skills__open');
-        this.parentNode.classList.add('skills__close');
-    } else {
-        this.parentNode.classList.remove('skills__close');
-        this.parentNode.classList.add('skills__open');
-    }
-}
-
-skillsHeader.forEach((el) => {
-    el.addEventListener('click', toggleSkills);
-});
 
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
@@ -68,59 +51,39 @@ tabs.forEach(tab =>{
     })
 })
 
-/*==================== Expertise MODAL ====================*/
-const modalViews = document.querySelectorAll('.Expertise__modal'),
-    modalBtns = document.querySelectorAll('.Expertise__button'),
-    modalCloses = document.querySelectorAll('.Expertise__modal-close');
 
-let modal = function (modalClick){
-    modalViews[modalClick].classList.add('active-modal');
-};
+/*==================== PORTFOLIO TABS ====================*/
+const portfolioTabBtns = document.querySelectorAll('.portfolio__tab-btn');
+const portfolioTabContents = document.querySelectorAll('.portfolio__tab-content');
 
-modalBtns.forEach((modalBtn, i)=>{
-    modalBtn.addEventListener('click', ()=>{
-        modal(i);
-    })
-});
+portfolioTabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const target = btn.dataset.portfolioTab;
 
-modalCloses.forEach(modalClose => {
-    modalClose.addEventListener('click', () =>{
-        modalViews.forEach((modalView) =>{
-            modalView.classList.remove('active-modal');
-        });
+        portfolioTabBtns.forEach(b => b.classList.remove('portfolio__tab-btn--active'));
+        portfolioTabContents.forEach(c => c.classList.remove('portfolio__tab-content--active'));
+
+        btn.classList.add('portfolio__tab-btn--active');
+        document.getElementById('portfolio-' + target).classList.add('portfolio__tab-content--active');
     });
 });
 
-/*==================== PORTFOLIO SWIPER  ====================*/
-let swiper = new Swiper(".portfolio__container", {
-    cssMode: true,
-    loop: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
 /*==================== ARTICLES ====================*/
-let swiperarticles = new Swiper(".articles__container", {
-    loop: true,
-    grapCursor: true,
-    spaceBetween: 40,
-  
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    breakpoints: {
-      568: {
-        slidesPerView: 2,
-      },
-    },
-  });
+if (document.querySelector(".articles__container")) {
+    let swiperarticles = new Swiper(".articles__container", {
+        loop: true,
+        grabCursor: true,
+        spaceBetween: 40,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+        },
+        breakpoints: {
+            568: { slidesPerView: 2 },
+        },
+    });
+}
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
@@ -130,7 +93,7 @@ function scrollActive(){
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id');
+        const sectionId = current.getAttribute('id');
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link');
@@ -203,22 +166,3 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-// Google recaptcha
-window.onload = function() { 
-    var el = document.getElementById('g-recaptcha-response'); 
-    if (el) { 
-      el.setAttribute('required', 'required'); 
-    } 
-  }
-
-// validate all field in the contact form
-document.getElementById("check").onclick = function() {
-    let allAreFilled = true;
-    document.getElementById("submit_form").querySelectorAll("[required]").forEach(function(i) {
-      if (!allAreFilled) return;
-      if (!i.value) { allAreFilled = false;  return; }
-    })
-    if (!allAreFilled) {
-      alert('Fill all the fields');
-    }
-  };

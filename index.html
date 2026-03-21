@@ -4,23 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ahmed Faarih - Web developer">
+    <meta name="description" content="Ahmed Faarih - Full Stack Developer">
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Ahmed Faarih - Web developer</title>
-    <meta name="keywords" content="Web developer, software developer, computer science student, ">
+    <title>Ahmed Faarih - Full Stack Developer</title>
+    <meta name="keywords" content="Full Stack Developer, software developer, web developer, ">
     <meta name="author" content="Ahmed Faarih">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="KYe6GsSYjjdW_70JlJh1PmUMcjtCYCgVxAILWMEkWSw" />
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <meta property="og:title" content="Ahmed Faarih - Full Stack Developer">
+    <meta property="og:description" content="Full Stack Developer based in the Maldives. Building web apps, mobile apps, and APIs.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/me.jpeg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ahmed Faarih - Full Stack Developer">
+    <meta name="twitter:description" content="Full Stack Developer based in the Maldives. Building web apps, mobile apps, and APIs.">
+    <meta name="twitter:creator" content="@faarih_ahmed">
 </head>
 
 <body>
+<script>if(localStorage.getItem('selected-theme')==='dark')document.body.classList.add('dark-theme');</script>
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">Ahmed Faarih</a>
@@ -31,28 +38,29 @@
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
-                        </a>
-                    </li>
-                    <li class="nav__item">
+<li class="nav__item">
                         <a href="#qualifications" class="nav__link">
-                            <i class="uil uil-graduation-cap nav__icon"></i> Qualifications
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Experience
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        <a href="projects.html" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Projects
                         </a>
                     </li>
-                    <li class="nav__item">
+<li class="nav__item">
                         <a href="#contact" class="nav__link">
-                            <i class="uil uil-estate nav__icon"></i> Contact Me
+                            <i class="uil uil-message nav__icon"></i> Contact Me
                         </a>
                     </li>
                 </ul>
                 <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-apps"></i>
             </div>
         </nav>
     </header>
@@ -71,19 +79,19 @@
                     </div>
 
                     <div class="home__img">
-                        <img  src="assets/img/bit.png" alt="" srcset="">
+                        <img  src="assets/img/me.jpeg" alt="Ahmed Faarih" srcset="">
                     </div>
                     <div class="home__data">
                         <h1 class="home__title">Hello <br> I'm Faarih,</h1>
-                        <h3 class="home__subtitle">Web Developer</h3>
-                        <p class="home__description">With over 5 years of experience in software development, I specialize in creating efficient and scalable web applications using PHP, JavaScript, HTML, CSS, and frameworks like Laravel, Vue, Tailwind, and Bootstrap. I'm also proficient in API development.</p>
+                        <h3 class="home__subtitle">Full Stack Developer</h3>
+                        <p class="home__description">This is mostly just a place I keep my work and a few things I've built. I've always had a soft spot for personal sites and indie blogs — people putting stuff on the internet just because. So here's mine.</p>
                         <a href="#contact" class="button button--flex">
                             Contact Me <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>                    
                 </div>
 
-                <div class="home_scroll">
+                <div class="home__scroll">
                     <a href="#about" class="home__scroll-button button--flex">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                         <span class="home__scroll-name">Scroll down</span>
@@ -93,57 +101,34 @@
             </div>
         </section>
         
-        <section class="about section" id="about">
-            <h2 class="section__title"> About Me</h2>
-            <span class="section__subtitle">My introduction</span>
-
-            <div class="about__container container grid">
-                <div class="about__data">
-                    <p class="about__description">
-                        I'm a web developer with extensive experience in Laravel and Vue.js, currently working at Aasandha Company Ltd. I have a solid foundation in software development and web technologies, with a diploma in Computer Science from Villa College and a bachelor's degree from Cyryx College.
-                    </p>
-            
-                    <div class="about__buttons">
-                        <a download="" href="assets/pdf/cv.pdf" class="button button--flex">
-                            Download CV <i class="uil uil-download-alt button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-
-        </section>
-
-
         <section class="qualification section" id="qualifications">
-            <h2 class="section__title">Qualifications</h2>
+            <h2 class="section__title">Experiences</h2>
             <div class="section__subtitle">My personal journey</div>
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                    <div class="qualification__button button--flex" data-target="#education">
                         <i class="uil uil-graduation-cap qualification__icon"></i>
                         Education
                     </div>
 
-                    <div class="qualification__button button--flex" data-target="#work">
+                    <div class="qualification__button button--flex qualification__active" data-target="#work">
                         <i class="uil uil-briefcase-alt qualification__icon"></i>
                         Work
                     </div>
                 </div>
 
                 <div class="qualification__sections">
-                    <div class="qualification__content qualification__active" data-content id="education">
+                    <div class="qualification__content" data-content id="education">
                         <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">B.Sc. in Information Technology  </h3>
+                                <h3 class="qualification__title">M.Sc. Business Informatics</h3>
                                 <span class="qualification__subtitle">
-                                    <a href="https://cyryxcollege.edu.mv/" target="_blank">Cyryxx College</a>
-                                        <br>
+                                    <a href="https://www.uni-corvinus.hu/en/" target="_blank">Corvinus University of Budapest</a>
                                 </span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    2020 - 2022
+                                    2025 - Present
                                 </div>
                             </div>
 
@@ -157,23 +142,40 @@
                             <div></div>
                             <div>
                                 <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
                             </div>
 
+                            <div>
+                                <h3 class="qualification__title">B.Sc. in Information Technology</h3>
+                                <span class="qualification__subtitle">
+                                    <a href="https://cyryxcollege.edu.mv/" target="_blank">Cyryxx College</a>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2020 - 2022
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">Diploma Computer Science</h3>
                                 <span class="qualification__subtitle">
                                     <a href="https://www.villacollege.edu.mv" target="_blank">Villa College</a>
-                                        <br>
                                 </span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     2018 - 2019
                                 </div>
                             </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="qualification__content" data-content id="work">
+                    <div class="qualification__content qualification__active" data-content id="work">
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">Software Developer</h3>
@@ -182,13 +184,32 @@
                                 </span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    June 2022 - Present
+                                    Jul 2023 - Nov 2025
                                 </div>
                             </div>
 
                             <div>
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Assistant Software Developer</h3>
+                                <span class="qualification__subtitle">
+                                    <a href="https://www.aasandha.mv/" target="_blank">Aasandha Company Ltd</a>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Jun 2022 - Jul 2023
+                                </div>
                             </div>
                         </div>
 
@@ -202,7 +223,7 @@
                             <div>
                                 <h3 class="qualification__title">Assistant IT officer</h3>
                                 <span class="qualification__subtitle">
-                                    <a href="https://employmenttribunal.gov.mv/tribunal/" target="_blank">Employment Tribunal </a>
+                                    <a href="https://employmenttribunal.gov.mv/tribunal/" target="_blank">Employment Tribunal</a>
                                 </span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
@@ -215,7 +236,7 @@
                             <div>
                                 <h3 class="qualification__title">Technical Assistant</h3>
                                 <span class="qualification__subtitle">
-                                    <a href="https://www.univr.it/it/" target="_blank">Male' Water & Sewerage Company</a>
+                                    Male' Water & Sewerage Company
                                 </span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
@@ -236,75 +257,138 @@
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Some of my side projects apart from work at Aasandha & Tribunal</span>
 
-            <div class="portfolio__container container swiper-container">
-                <div class="swiper-wrapper">
+            <div class="portfolio__tabs container">
+                <div class="portfolio__tab-btn portfolio__tab-btn--active" data-portfolio-tab="web">
+                    <i class="uil uil-globe"></i> Web
+                </div>
+                <div class="portfolio__tab-btn" data-portfolio-tab="mobile">
+                    <i class="uil uil-mobile-android"></i> Mobile
+                </div>
+                <div class="portfolio__tab-btn" data-portfolio-tab="api">
+                    <i class="uil uil-brackets-curly"></i> API
+                </div>
+            </div>
 
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/seekmv.png" alt="" class="portfolio__img" loading="lazy">
+            <div class="portfolio__tab-content portfolio__tab-content--active" id="portfolio-web">
+                <div class="web__container container">
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Seek Maldives</h3>
-                            <p class="portfolio__description">
-                                Job Ads posting platform.
-                            </p>
-                            <a href="https://seek.mv"
-                                class="button button--flex button--small portfolio__button">
-                                View
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                    <div class="web__card">
+                        <img src="assets/img/seek.png" alt="Seek Maldives - Job ads platform" class="web__img" loading="lazy">
+                        <div class="web__info">
+                            <h3 class="apps__title">Seek Maldives</h3>
+                            <p class="apps__description">An image-centred job listing platform focused on resort jobs in the Maldives. Built with Laravel, Vue.js, and Tailwind. Backend later migrated to Filament with role-based permissions, job postings management, and more.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">Laravel</span>
+                                <span class="portfolio__tag">Vue.js</span>
+                                <span class="portfolio__tag">MySQL</span>
+                                <span class="portfolio__tag">Tailwind</span>
+                                <span class="portfolio__tag">Filament</span>
+                            </div>
+                            <a href="https://seek.mv" target="_blank" class="button button--flex button--small portfolio__button">View <i class="uil uil-arrow-right button__icon"></i></a>
                         </div>
                     </div>
 
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/ocm.png" alt="" class="portfolio__img" loading="lazy">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Ocean Cruiser Maldives</h3>
-                            <p class="portfolio__description">
-                                Website for Ocean Cruiser Maldives
-                            </p>
-                            <a href="https://ocm.mv/v2" class="button button--flex button--small portfolio__button">
-                                View
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/mn.png" alt="MN Lawyers" class="portfolio__img" loading="lazy">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Munavvar Nazahath & Co</h3>
-                            <p class="portfolio__description">
-                                Website for Munavvar Nazahath & Co
-                            </p>
-                            <a href="https://mnlawyers.legal" class="button button--flex button--small portfolio__button">
-                                View
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--======================== PORTFOLIO 4 =============-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/prostore.png" alt="" class="portfolio__img" loading="lazy">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Prostore Maldives</h3>
-                            <p class="portfolio__description">
-                                E-commerce Website for Prostore Maldives
-                            </p>
-                            <a href="https://prostore.mv" class="button button--flex button--small portfolio__button">
-                                View
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                    <div class="web__card">
+                        <img src="assets/img/ocm.png" alt="Ocean Cruiser Maldives website" class="web__img" loading="lazy">
+                        <div class="web__info">
+                            <h3 class="apps__title">Ocean Cruiser Maldives</h3>
+                            <p class="apps__description">Website for OCM — a Maldivian marine company covering engineering services, Suzuki outboard spare parts, and speed boat travel including ferry, excursions, and private charters.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">JavaScript</span>
+                                <span class="portfolio__tag">Tailwind CSS</span>
+                            </div>
+                            <a href="https://ocm.mv/" target="_blank" class="button button--flex button--small portfolio__button">View <i class="uil uil-arrow-right button__icon"></i></a>
                         </div>
                     </div>
 
                 </div>
-            
-                <!--============ Add Pagination =============-->
-                <div class="swiper-pagination swiper-pagination-portfolio"></div>
+                <div class="web__more-btn">
+                    <a href="projects.html" class="button button--flex button--small portfolio__button">All Projects <i class="uil uil-arrow-right button__icon"></i></a>
+                </div>
             </div>
+
+            <div class="portfolio__tab-content" id="portfolio-mobile">
+                <div class="apps__container container">
+
+                    <div class="apps__card">
+                        <div class="apps__screenshots">
+                            <img src="assets/mobile-apps/seekmv/0x0ss (2).png" alt="Seek Maldives app screenshot" class="apps__screen apps__screen--side">
+                            <img src="assets/mobile-apps/seekmv/0x0ss.png" alt="Seek Maldives app - home screen" class="apps__screen apps__screen--center">
+                            <img src="assets/mobile-apps/seekmv/0x0ss (4).png" alt="Seek Maldives app screenshot" class="apps__screen apps__screen--side">
+                        </div>
+                        <div class="apps__info">
+                            <div class="apps__header">
+                                <h3 class="apps__title">Seek Maldives</h3>
+                                <span class="apps__platform"><i class="uil uil-mobile-android"></i> React Native</span>
+                            </div>
+                            <p class="apps__description">The mobile app for Seek Maldives — browse job listings, apply directly, and manage your profile on the go. Backed by the Seek Maldives Laravel API.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">React Native</span>
+                                <span class="portfolio__tag">Laravel API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="apps__card">
+                        <div class="apps__screenshots">
+                            <img src="assets/mobile-apps/atlantisexpressmv/400x800bb(2).png" alt="Atlantis Express app screenshot" class="apps__screen apps__screen--side">
+                            <img src="assets/mobile-apps/atlantisexpressmv/400x800bb.png" alt="Atlantis Express app - home screen" class="apps__screen apps__screen--center">
+                            <img src="assets/mobile-apps/atlantisexpressmv/400x800bb(3).png" alt="Atlantis Express app screenshot" class="apps__screen apps__screen--side">
+                        </div>
+                        <div class="apps__info">
+                            <div class="apps__header">
+                                <h3 class="apps__title">Atlantis Express</h3>
+                                <span class="apps__platform"><i class="uil uil-mobile-android"></i> React Native</span>
+                            </div>
+                            <p class="apps__description">App for Atlantis Express — a Maldivian trading platform specializing in traditional Boduberu instruments and cultural items. Registered in 2020, they've become a trusted name in the Boduberu community for authentic and customized products.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">React Native</span>
+                                <span class="portfolio__tag">Laravel API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="web__more-btn">
+                    <a href="projects.html#portfolio-mobile" class="button button--flex button--small portfolio__button">All Projects <i class="uil uil-arrow-right button__icon"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio__tab-content" id="portfolio-api">
+                <div class="api__container container">
+
+                    <div class="api__card">
+                        <div class="api__icon"><i class="uil uil-fish"></i></div>
+                        <div class="api__data">
+                            <h3 class="api__title">Fishes of Maldives API</h3>
+                            <p class="api__description">API for a catalogue of fish species found in Maldivian waters. Serves species data, images, and descriptions for use in marine education and research applications.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">Python</span>
+                                <span class="portfolio__tag">FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="api__card">
+                        <div class="api__icon"><i class="uil uil-server-network"></i></div>
+                        <div class="api__data">
+                            <h3 class="api__title">Atlantis Express API</h3>
+                            <p class="api__description">REST API for the Atlantis Express mobile app. Manages product listings, orders, and customer accounts for their Boduberu instruments and cultural items platform.</p>
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">Laravel</span>
+                                <span class="portfolio__tag">REST</span>
+                                <span class="portfolio__tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="web__more-btn">
+                    <a href="projects.html#portfolio-api" class="button button--flex button--small portfolio__button">All Projects <i class="uil uil-arrow-right button__icon"></i></a>
+                </div>
+            </div>
+
         </section>
 
         <!--==================== CONTACT ME ====================-->
@@ -319,7 +403,7 @@
 
                         <div>
                             <h3 class="contact__title">Telegram</h3>
-                            <span class="contact__subtitle">@ahmedfaarih</span>
+                            <a href="https://t.me/ahmedfaarih" target="_blank" class="contact__subtitle">@ahmedfaarih</a>
                         </div>
                     </div>
 
@@ -328,7 +412,7 @@
 
                         <div>
                             <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">ahmed.faarih@outlook.com</span>
+                            <a href="mailto:ahmed.faarih@outlook.com" class="contact__subtitle">ahmed.faarih@outlook.com</a>
                         </div>
                     </div>
                 </div>
@@ -341,15 +425,15 @@
     <footer class="footer" id="footer">
         <div class="footer__bg">
             <div class="footer__container container grid">
-                <div style="display: flex; flex-direction: column; align-items: center;">
+                <div style="display: flex; flex-direction: column; align-items: flex-start;">
                     <h2 class="footer__title">Ahmed Faarih</h2>
-                    <span class="footer__subtitle">Web Developer</span>
+                    <span class="footer__subtitle">Full Stack Developer</span>
                 </div>
 
                 <ul class="footer__links" style="align-self: center;">
 
                     <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                        <a href="projects.html" class="footer__link">Projects</a>
                     </li>
                 </ul>
 
@@ -370,7 +454,7 @@
 
 
     <!--==================== SCROLL TOP ====================-->
-    <a href="" class="scrollup" id="scroll-up">
+    <a href="#" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scroll__icon"></i>
     </a>
 
@@ -379,10 +463,6 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
 
 </body>
 
